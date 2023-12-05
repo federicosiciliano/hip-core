@@ -1,0 +1,24 @@
+data:
+    name: &name GiveMeSomeCredit #GiveMeSomeCredit #adult_income HELOC
+    +features_types: *name
+
+model: lr
+
+preference:
+  norm_loc: [0]
+  decimal_precision: 0
+
+recourse:
+  num_cf_per_iteration_per_user: [3] #[1,3,5] # Number of counterfactuals generated per user/samples
+  num_iterations: 100 # Number of iterations
+  lambda_params:
+    [
+      [0.5, 0.25, 0, 0, 0.25, 0],
+      [0.667, 0, 0, 0, 0.333, 0],
+      [0.25, 0.25, 0, 0, 0.5, 0],
+      [0.333, 0, 0, 0, 0.667, 0]
+    ]
+
+#EXPERIMENT PARAMETERS - NOT SAVED AS PART OF THE CONFIGURATION
+__exp__:
+    name: full #name of the experiment

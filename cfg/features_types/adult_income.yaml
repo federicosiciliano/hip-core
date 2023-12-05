@@ -1,0 +1,9 @@
+age: continuous
+workclass: categorical
+education: categorical
+marital_status: categorical
+occupation: categorical
+race: categorical
+gender: categorical
+hours_per_week: continuous
+income: target

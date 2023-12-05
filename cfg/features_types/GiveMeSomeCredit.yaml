@@ -1,0 +1,12 @@
+
+RevolvingUtilizationOfUnsecuredLines: continuous
+age: continuous
+NumberOfTime30-59DaysPastDueNotWorse: continuous
+DebtRatio: continuous
+MonthlyIncome: continuous
+NumberOfOpenCreditLinesAndLoans: continuous
+NumberOfTimes90DaysLate: continuous
+NumberRealEstateLoansOrLines: continuous
+NumberOfTime60-89DaysPastDueNotWorse: continuous
+NumberOfDependents: continuous
+SeriousDlqin2yrs: target
